@@ -11,8 +11,8 @@ brew "go"
 brew "powerlevel10k"
 brew "rbenv"
 brew "ruby-build"
-brew "libyaml"
-brew "gmp"
+brew "libyaml" # rbenv dependency
+brew "gmp" # rbenv dependency
 brew "terraform-docs"
 brew "tfenv"
 brew "wget"
