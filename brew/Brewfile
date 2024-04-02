@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
+tap "homebrew/cask-fonts"
 tap "romkatv/powerlevel10k"
 brew "python@3.10"
 brew "azure-cli"
@@ -8,7 +9,11 @@ brew "gh", args: ["HEAD"]
 brew "git"
 brew "gnupg"
 brew "go"
+
+# Powerline and its required fonts
+cask "font-meslo-lg-nerd-font"
 brew "powerlevel10k"
+
 brew "rbenv"
 brew "ruby-build"
 brew "libyaml" # rbenv dependency
