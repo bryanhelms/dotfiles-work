@@ -31,7 +31,9 @@ fi
 
 # Now that we have stow, copy over all the config files
 stow --target "$HOME" --no-folding git
-
+stow --target "$HOME"              zsh
+stow --target "$HOME"              p10k
+stow --target "$HOME" --no-folding vim
 
 # Once Brew is installed, and git has been installed, and stow has copied over the general
 # git config, set our local config
