@@ -35,6 +35,13 @@ stow --target "$HOME"              zsh
 stow --target "$HOME"              p10k
 stow --target "$HOME" --no-folding vim
 
+# Install Oh-My-Zsh if it's not already present
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    ./scripts/install-omz.sh
+else
+    echo "Oh-My-Zsh is already installed."
+fi
+
 # Once Brew is installed, and git has been installed, and stow has copied over the general
 # git config, set our local config
 if [[ -x "$(command -v git)" ]]; then
