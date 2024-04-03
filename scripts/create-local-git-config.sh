@@ -14,7 +14,6 @@ make_config() {
 }
 
 if [ -f $LOCAL_CONFIG_PATH ]; then
-    echo "File exixts."
     read -p "Local git config already exists. Do you want to replace it? (y/n): " -n 1 -r
     echo # Add a new line
     if [[ $REPLY =~ ^[Yy]$ ]]; then
