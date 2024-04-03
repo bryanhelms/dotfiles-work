@@ -59,8 +59,8 @@ fi
 # Set preferences for iterm2
 ./scripts/set-iterm-defaults.sh
 
+# Set preferences for default macOS Terminal
+./scripts/set-macos-terminal-defaults.sh
+
 # Set macOS defaults
 ./scripts/set-macos-defaults.sh
-
-# TODO Consider setting the default font for Apple terminal (probably not needed)
-# TODO See if we need to set the default integrated terminal font settings for VSCode
