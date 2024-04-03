@@ -19,6 +19,9 @@ defaults write com.apple.screencapture type -string "png"
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
+# Make the function keys be function keys (doesn't work until restart)
+defaults write -g com.apple.keyboard.fnState -boolean true
+
 # Need to restart some things after changing settings
 killall Dock
 killall Finder
