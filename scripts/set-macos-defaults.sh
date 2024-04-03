@@ -2,8 +2,13 @@
 
 echo "Setting macOS defaults..."
 
+# Find more settable defaults here: https://macos-defaults.com/
+
 # Finder: show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
+# Finder: show path bar
+defaults write com.apple.finder "ShowPathbar" -bool "true"
+
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
