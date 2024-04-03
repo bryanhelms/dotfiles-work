@@ -11,6 +11,8 @@ make_config() {
     fi
 
     printf "[user]\n\tname = %s\n\temail = %s\n" "$username" "$email" >| $LOCAL_CONFIG_PATH
+
+    echo "Local git config created."
 }
 
 if [ -f $LOCAL_CONFIG_PATH ]; then

@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+echo
+echo "********************************************"
+echo "*          Setting up this Mac...          *"
+echo "********************************************"
+echo
+
 if command -v brew &>/dev/null; then
     echo "Homebrew is already installed."
 else
@@ -32,12 +38,16 @@ if ! command -v stow &> /dev/null; then
     exit 1
 fi
 
+echo "Linking config files..."
+
 # Now that we have stow, copy over all the config files
 stow --target "$HOME" --no-folding git
 stow --target "$HOME"              zsh
 stow --target "$HOME"              p10k
 stow --target "$HOME" --no-folding vim
 stow --target "$HOME"              iterm2
+
+echo "Done."
 
 # Install Oh-My-Zsh if it's not already present
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -64,3 +74,8 @@ fi
 
 # Set macOS defaults
 ./scripts/set-macos-defaults.sh
+
+echo
+echo "********************************************"
+echo "*    Setup complete! Have a nice day :)    *"
+echo "********************************************"
