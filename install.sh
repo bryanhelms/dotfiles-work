@@ -37,6 +37,7 @@ stow --target "$HOME" --no-folding git
 stow --target "$HOME"              zsh
 stow --target "$HOME"              p10k
 stow --target "$HOME" --no-folding vim
+stow --target "$HOME"              iterm2
 
 # Install Oh-My-Zsh if it's not already present
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -54,3 +55,11 @@ else
     echo "Git is not installed. Please install git and run this script again."
     exit 1
 fi
+
+# Set preferences for iterm2
+./scripts/set-iterm-defaults.sh
+
+# TODO Set settings for iterm2, making sure to set the font setting
+# Set mac defaults
+# Consider setting the default font for Apple terminal (probably not needed)
+# See if we need to set the default integrated terminal font settings for VSCode
