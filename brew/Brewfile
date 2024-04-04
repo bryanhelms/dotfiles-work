@@ -26,3 +26,7 @@ brew "jq"
 brew "stow"
 
 cask "visual-studio-code"
+
+# Some things to make macOS a little better
+cask "sensiblesidebuttons" # Adds Windows-like back/forward buttons to mice
+cask "rectangle" # Window manager, for shortcuts arranging windows
