@@ -48,3 +48,6 @@ export TF_PLUGIN_CACH_DIR="$HOME/.terraform.d/plugin-cache"
 
 # VS Code Insiders
 alias codi="code-insiders"
+
+# Ghostty
+export XDG_CONFIG_HOME="$HOME/.config"

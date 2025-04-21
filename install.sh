@@ -46,6 +46,7 @@ stow --target "$HOME"              zsh
 stow --target "$HOME"              p10k
 stow --target "$HOME" --no-folding vim
 stow --target "$HOME"              iterm2
+stow --target "$HOME" --no-folding ghostty
 
 echo "Done."
 

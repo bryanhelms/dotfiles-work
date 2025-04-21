@@ -10,6 +10,8 @@ brew "git"
 brew "gnupg"
 brew "go"
 
+cask "ghostty"
+
 # Powerline and its required fonts
 cask "font-meslo-lg-nerd-font"
 brew "powerlevel10k"
