@@ -51,3 +51,6 @@ alias codi="code-insiders"
 
 # Ghostty
 export XDG_CONFIG_HOME="$HOME/.config"
+
+# Tailscale
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
